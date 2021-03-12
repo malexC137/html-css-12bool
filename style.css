@@ -4,23 +4,29 @@
     box-sizing: border-box;
 }
 
-.row {
-    background-color: aqua;
-}
-
 [class*="col-"] {
     height: 150px;
+    background-color: aqua;
     border-top: solid 1px;
     border-right: solid 1px;
     border-bottom: solid 1px;
     border-left: solid 1px;
-    text-align: center;
-    font-size: 10px;
-    line-height: 150px;
+    border-color: indigo;
     padding: 5px;
-    overflow: hidden;
+    position: relative;
+}
+
+p {
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    font-size: 11px;
+    transform: translate(-50%);
 }
 
 .nested-col {
     background-color: chartreuse;
+    border: solid 1px;
+    border-color: deeppink;
+    height: 138px;
 }
